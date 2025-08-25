@@ -25,15 +25,17 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-white/98 backdrop-blur-md shadow-lg' : 'bg-white/95 backdrop-blur-md'
     }`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
-            <div className="w-12 h-12 rounded-full gradient-bg-luxury flex items-center justify-center luxury-shadow">
-              <Crown className="w-6 h-6 text-white" />
-            </div>
+            <img 
+              src="/lovable-uploads/67a0b711-2afa-4f7e-96a4-33ad8af7ad6b.png" 
+              alt="Imperium Aromas Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <h2 className="text-xl font-serif font-bold gradient-text">Imperium</h2>
               <p className="text-xs text-muted-foreground font-medium">AROMAS</p>
@@ -90,7 +92,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border bg-white/95 backdrop-blur-md rounded-lg">
+          <div className="md:hidden mt-4 py-4 border-t border-border bg-white/98 backdrop-blur-md rounded-lg shadow-lg">
             <div className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('sobre')}
