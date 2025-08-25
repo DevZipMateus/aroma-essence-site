@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/98 backdrop-blur-md shadow-lg' : 'bg-white/95 backdrop-blur-md'
+      isScrolled ? 'bg-black/98 backdrop-blur-md shadow-lg' : 'bg-black/95 backdrop-blur-md'
     }`}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
         <div className="flex items-center justify-between">
@@ -78,7 +78,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 hover:bg-gray-100 rounded-md transition-colors"
+            className="lg:hidden p-2 hover:bg-gray-800 rounded-md transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -92,29 +92,29 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 border-t border-border bg-white/98 backdrop-blur-md rounded-lg shadow-lg">
+          <div className="lg:hidden mt-4 py-4 border-t border-border bg-black/98 backdrop-blur-md rounded-lg shadow-lg">
             <div className="flex flex-col space-y-3">
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-md"
+                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-800 transition-colors font-medium rounded-md"
               >
                 Sobre Nós
               </button>
               <button 
                 onClick={() => scrollToSection('produtos')}
-                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-md"
+                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-800 transition-colors font-medium rounded-md"
               >
                 Produtos
               </button>
               <button 
                 onClick={() => scrollToSection('missao')}
-                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-md"
+                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-800 transition-colors font-medium rounded-md"
               >
                 Missão & Visão
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-md"
+                className="text-left px-4 py-3 text-foreground hover:text-primary hover:bg-gray-800 transition-colors font-medium rounded-md"
               >
                 Contato
               </button>
