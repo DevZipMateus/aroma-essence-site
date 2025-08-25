@@ -21,19 +21,19 @@ const WhatsAppFloat = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50">
+    <div className="fixed bottom-3 sm:bottom-4 lg:bottom-6 right-3 sm:right-4 lg:right-6 z-50">
       {/* Tooltip */}
       {showTooltip && (
-        <div className="absolute bottom-16 sm:bottom-20 right-0 mb-2 mr-2 animate-fade-in-up">
-          <div className="bg-white rounded-lg shadow-lg p-3 sm:p-4 max-w-xs sm:max-w-sm relative">
+        <div className="absolute bottom-14 sm:bottom-16 lg:bottom-20 right-0 mb-2 mr-1 sm:mr-2 animate-fade-in-up">
+          <div className="bg-white rounded-lg shadow-lg p-3 sm:p-4 max-w-[280px] sm:max-w-xs lg:max-w-sm relative">
             <button
               onClick={() => setShowTooltip(false)}
-              className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors"
+              className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors touch-target"
               aria-label="Fechar"
             >
               <X className="w-3 h-3 sm:w-4 sm:h-4" />
             </button>
-            <p className="text-xs sm:text-sm text-gray-700 pr-4 sm:pr-6">
+            <p className="text-xs sm:text-sm text-gray-700 pr-4 sm:pr-6 leading-relaxed">
               <strong>Pronto para crescer?</strong><br />
               Fale conosco no WhatsApp e descubra nossas oportunidades B2B!
             </p>
@@ -47,10 +47,10 @@ const WhatsAppFloat = () => {
         href="https://wa.me/5532984143694?text=Olá! Gostaria de conhecer as oportunidades de parceria da Imperium Aromas"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float group"
+        className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float group touch-target"
         aria-label="Entrar em contato via WhatsApp"
       >
-        <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform duration-300" />
+        <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 group-hover:scale-110 transition-transform duration-300" />
         
         {/* Pulse animation */}
         <div className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-75"></div>
