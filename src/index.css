@@ -166,11 +166,6 @@
   }
 }
 
-/* Responsive breakpoints for extra small devices */
-@screen xs {
-  /* Custom styles for very small screens (375px and up) */
-}
-
 /* Ensure proper spacing on very small screens */
 @media (max-width: 374px) {
   .container {
