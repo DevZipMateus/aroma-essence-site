@@ -5,14 +5,14 @@ import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-20 bg-white">
+    <section id="contato" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
             <span className="gradient-text">Fale Conosco</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground max-w-2xl mx-auto">
             Pronto para fazer parte da nossa rede de parceiros de sucesso?
           </p>
         </div>
@@ -34,7 +34,7 @@ const Contact = () => {
                     <h4 className="font-semibold text-primary mb-1">Telefone Comercial</h4>
                     <a 
                       href="https://wa.me/5532984143694" 
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-foreground hover:text-primary transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -51,7 +51,7 @@ const Contact = () => {
                     <h4 className="font-semibold text-primary mb-1">E-mail Comercial</h4>
                     <a 
                       href="mailto:comercial.imperiumaromas@gmail.com" 
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-foreground hover:text-primary transition-colors"
                     >
                       comercial.imperiumaromas@gmail.com
                     </a>
@@ -64,7 +64,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Endereço</h4>
-                    <address className="text-muted-foreground not-italic">
+                    <address className="text-foreground not-italic">
                       RUA MARIA LANZIOTTI BARRA, 195, CASA 1<br />
                       SANTA CRUZ - Juiz de Fora - MG<br />
                       CEP: 36088-230
@@ -78,7 +78,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Horário de Funcionamento</h4>
-                    <p className="text-muted-foreground">
+                    <p className="text-foreground">
                       Segunda a Sexta: 09h às 16h
                     </p>
                   </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary mb-1">CNPJ</h4>
-                    <p className="text-muted-foreground">26.258.237/0001-60</p>
+                    <p className="text-foreground">26.258.237/0001-60</p>
                   </div>
                 </div>
               </div>
@@ -123,10 +123,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg bg-white">
+            <Card className="border-none shadow-lg bg-white/10 backdrop-blur-sm">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-serif font-semibold mb-4 text-primary">Siga-nos nas Redes</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-foreground mb-6">
                   Acompanhe novidades, dicas e cases de sucesso dos nossos parceiros.
                 </p>
                 <a 
@@ -143,10 +143,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg bg-muted/20">
+            <Card className="border-none shadow-lg bg-white/10 backdrop-blur-sm">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-serif font-semibold mb-4 text-primary">Pronto para Começar?</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-foreground mb-6">
                   Entre em contato conosco e descubra como podemos impulsionar seu negócio juntos.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
