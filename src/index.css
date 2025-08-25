@@ -62,13 +62,21 @@
     @apply border-border;
   }
   
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    min-height: 100vh;
+    height: 100%;
     background-image: url('/lovable-uploads/3243af8f-dbdd-4bfb-800d-e888ee7d063e.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    position: relative;
   }
 
   /* Dark overlay for better content readability */
@@ -79,13 +87,15 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1;
     pointer-events: none;
   }
-  
-  html {
-    scroll-behavior: smooth;
+
+  #root {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
   }
 
   /* Responsive text sizes */
