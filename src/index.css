@@ -69,6 +69,20 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Responsive text sizes */
+  .responsive-text-xs { @apply text-xs sm:text-sm; }
+  .responsive-text-sm { @apply text-sm sm:text-base; }
+  .responsive-text-base { @apply text-base sm:text-lg; }
+  .responsive-text-lg { @apply text-lg sm:text-xl; }
+  .responsive-text-xl { @apply text-xl sm:text-2xl; }
+  .responsive-text-2xl { @apply text-2xl sm:text-3xl; }
+  .responsive-text-3xl { @apply text-3xl sm:text-4xl; }
+
+  /* Mobile-first container */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+  }
 }
 
 /* Custom component classes */
@@ -95,6 +109,15 @@
   
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  /* Responsive grid utilities */
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8;
+  }
+  
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8;
   }
 }
 
@@ -126,5 +149,39 @@
   
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  /* Mobile touch targets */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Responsive breakpoints for extra small devices */
+@screen xs {
+  /* Custom styles for very small screens (375px and up) */
+}
+
+/* Ensure proper spacing on very small screens */
+@media (max-width: 374px) {
+  .container {
+    @apply px-3;
+  }
+  
+  h1 {
+    @apply text-2xl;
+  }
+  
+  .text-xs {
+    @apply text-[10px];
   }
 }
