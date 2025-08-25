@@ -1,11 +1,11 @@
 
-import { Spray, Waves, Droplets, Sparkles } from 'lucide-react';
+import { Sparkles, Waves, Droplets, Heart } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Products = () => {
   const products = [
     {
-      icon: Spray,
+      icon: Sparkles,
       title: "Aromatizantes Spray",
       description: "Nossa linha principal de sprays aromatizadores premium, desenvolvidos com fragrâncias exclusivas e duração prolongada.",
       features: ["Fragrâncias exclusivas", "Longa duração", "Embalagem premium", "Ideal para revenda"]
@@ -23,7 +23,7 @@ const Products = () => {
       features: ["Fragrâncias harmoniosas", "Qualidade premium", "Embalagem atrativa", "Margem competitiva"]
     },
     {
-      icon: Sparkles,
+      icon: Heart,
       title: "Escalda Pés e Sais",
       description: "Produtos de bem-estar que expandem as possibilidades de venda, oferecendo experiências sensoriais completas.",
       features: ["Experiência sensorial", "Bem-estar garantido", "Nicho diferenciado", "Oportunidade única"]
