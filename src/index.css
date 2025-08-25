@@ -64,6 +64,24 @@
   
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    background-image: url('/lovable-uploads/3243af8f-dbdd-4bfb-800d-e888ee7d063e.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  /* Dark overlay for better content readability */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    pointer-events: none;
   }
   
   html {
